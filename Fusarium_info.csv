@@ -1,0 +1,42 @@
+ID,Origin,Host/Source of Isolation,Repository,GeneBank,Pathogenicity,Full Name,Size (bp),Gene content,GC content (%)
+Firre_1A,Mexico,V. planifolia,N/A,N/A,NP,Fusarium irregulare 1A,38072556,12079,47.66237129
+Firre_n579,USA,H. sapiens,NCBI,GCA_004367085.1_FIESC_15_NRRL_31160,NP,Fusarium irregulare,37441600,12228,48.63952662
+Foxy_n113,UK,Allium spp,NCBI,GCA_003615085.1_FoC_Fus2_v1,P,Fusarium oxysporum f.sp_cepae,53425788,16114,47.73315463
+Foxy_n556,Japan,Brassica oleracea,NCBI,GCA_018894095.1_ASM1889409v1,P,Fusarium oxysporum f.sp_conglutinans,72150645,19826,47.26368974
+Foxy_n128,UK,Musa sp.,NCBI,GCA_007994515.1_ASM799451v1,P,Fusarium oxysporum f.sp._cubense,48588396,14773,47.53651057
+Foxy_n22,China,Musa ABB,NCBI,GCA_000350345.1_Foc1_1.0,P,Fusarium oxysporum f.sp._cubense race 1,47657417,14662,47.27860723
+Foxy_n2,USA,S. lycopersicum,NCBI,GCA_000149955.2_ASM14995v2,P,Fusarium oxysporum f.sp._lycopersici 4287,61471697,17652,47.22528971
+Foxy_n9,USA,S. lycopersicum,NCBI,GCA_000260155.3_FO_CL57_V1,P,Fusarium oxysporum f.sp._radicis lycopersici 26381,49359289,15101,47.52442646
+Foxy_n5,USA,S. lycopersicum,NCBI,GCA_000259975.2_FO_MN25_V1,P,Fusarium oxysporum f.sp._lycopersici MN25,48637398,14793,47.58876904
+Foxy_n17,Mexico,Cucumis melo,NCBI,GCA_000260495.2_FO_melonis_V1,P,Fusarium oxysporum f.sp._melonis 26406,54034280,16126,47.28763666
+Foxy_n19,France,Soil,NCBI,GCA_000271705.2_FO_Fo47_V1,NP,Fusarium oxysporum,49664628,15191,47.46796855
+Foxy_n21,USA,H. sapiens,NCBI,GCA_000271745.2_FO_FOSC_3_a_V1,NP,Fusarium oxysporum,47906303,14449,46.93424579
+Foxy_n118,UK,Allium cepa,NCBI,GCA_003615185.1_Fo_PG_v1,NP,Fusarium oxysporum,50292220,15389,47.62004143
+Foxy_n409,China,Soil,NCBI,GCA_013085055.1_ASM1308505v1,NP,Fusarium oxysporum,50358849,15389,47.7150004
+Foxy_n577,Ruanda,Rice,NCBI,GCA_900096695.1_version_1,NP,Fusarium oxysporum,49085590,14894,47.13279193
+Foxy_n7,USA,Pisum sp,NCBI,GCA_000260075.2_FO_HDV247_V1,P,Fusarium oxysporum f.sp._pisi HDV247,55188216,16511,47.04164201
+Foxy_n39,Canada,Cucurbitaceae,NCBI,GCA_001702695.2_ASM170269v2,P,Fusarium oxysporum f.sp._radicis cucumerinum,52908293,15679,47.67190656
+Foxy_n15,USA,Raphanus sativus,NCBI,GCA_000260235.2_FO_PHW815_V1,P,Fusarium oxysporum f.sp._raphani 54005,53499362,16009,47.287377
+Foxy_n562,Japan,Raphanus sativus,NCBI,GCA_019157275.1_ASM1915727v1,P,Fusarium oxysporum f.sp._raphani,66822448,19399,48.11935354
+Foxy_n11,USA,Gossypium hirsutum,NCBI,GCA_000260175.2_FO_Cotton_V1,P,Fusarium oxysporum f.sp._vasinfectum 25433,52914414,15783,47.26043456
+Fvert_n578,USA,Zea mays,NCBI,GCA_000149555.1_ASM14955v1,P,Fusarium verticilioides 7600,41885085,13401,48.56201199
+Foxy_albedinis,Morocco,Phoenix dactylifera,NCBI,GCA_023509805.1,P,Fusarium oxysporum f.sp._albedinis,65559131,18814,47.73167905
+Fvert_S23,Mexico,V. planifolia,N/A,N/A,P,Fusarium verticillioides S23,45388264,14184,47.55196189
+F_fuji,UK,Rice,NCBI,GCA_900079805.1,P,Fusarium fujikuroi IMI 58289,43832314,13433,47.44536417
+Foxy_basilici,USA,Ocimum basilicum,Mycocosm,Fusarium oxysporum f.sp. basilici Amherst-33 v1.0,P,Fusarium oxysporum f.sp._basilici,56731494,16876,47.80473083
+F_grami,USA,Zea mays,NCBI,GCA_000240135.3 ,P,Fusarium graminearum,36458046,11582,48.02124063
+Foxy_n61,N/A,S. lycopersicum,NCBI,GCA_001703125.1_FoMN14,NP,Fusarium oxysporum,48996880,15111,47.86946638
+Foxy_n80,N/A,S. lycopersicum,NCBI,GCA_001931975.2_ASM193197v2,NP,Fusarium oxysporum,51318644,15473,47.57710862
+Foxy_n90,N/A,Other,NCBI,GCA_002233935.1_Fo_Tu58,NP,Fusarium oxysporum,50403639,15223,47.52248345
+Foxy_n109,N/A,Zinnia hybrida,NCBI,GCA_003025205.1_ASM302520v1,NP,Fusarium oxysporum,48787031,14739,47.57420881
+Foxy_n115,N/A,Other,NCBI,GCA_003615115.1_Fo_A13_v1,NP,Fusarium oxysporum,54787818,16818,47.87222955
+Foxy_n116,N/A,Other,NCBI,GCA_003615155.1_Fo_A28_v1,NP,Fusarium oxysporum,53038185,16006,47.4679686
+Foxy_n117,N/A,Other,NCBI,GCA_003615165.1_Fo_CB3_v1,NP,Fusarium oxysporum,50515499,15649,47.99603187
+Foxy_n119,N/A,Peanut,NCBI,GCA_003704975.1_ASM370497v1,NP,Fusarium oxysporum,47450651,15174,48.32218635
+Foxy_n120,N/A,Peanut,NCBI,GCA_003705035.1_ASM370503v1,NP,Fusarium oxysporum,44448977,14150,48.25340525
+Foxy_n414,N/A,Spinacia oleracea,NCBI,GCA_013347375.1_WSU_Fus259,NP,Fusarium oxysporum,49300353,15046,47.48350585
+Foxy_n413,N/A,Spinacia oleracea,NCBI,GCA_013347365.1_WSU_Fus191,NP,Fusarium oxysporum,47578831,14618,47.50622183
+Foxy_n470,N/A,Soil,NCBI,GCA_014325185.1_ASM1432518v1,NP,Fusarium oxysporum,53356920,16059,47.22760047
+Foxy_n472,N/A,Soil,NCBI,GCA_014325215.1_ASM1432521v1,NP,Fusarium oxysporum,52559635,15987,47.5446871
+Foxy_n488,N/A,Acacia koa,NCBI,GCA_014857085.1_ASM1485708v1,NP,Fusarium oxysporum,49057733,14858,47.25640502
+Foxy_n501,N/A,Fragaria vecna,NCBI,GCA_016163925.1_USDA_N-18842_v1,NP,Fusarium oxysporum,51804496,15597,47.40879826
