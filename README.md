@@ -9,7 +9,7 @@ The software requiered to perform all the analysis are as follows:
 
 [BiGSCAPE](https://github.com/nselem/bigscape-corason) 1.1.2
 
-[CORASON] (https://github.com/nselem/bigscape-corason) 1.1.2
+[CORASON](https://github.com/nselem/bigscape-corason) 1.1.2
 
 [proteinortho](https://gitlab.com/paulklemm_PHD/proteinortho) 6.1.0
 
