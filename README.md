@@ -14,8 +14,21 @@ The software requiered to perform all the analysis are as follows:
 [proteinortho](https://gitlab.com/paulklemm_PHD/proteinortho) 6.1.0
 
 ## Database Construction
-The file Fusarium_info contains relevant information about the genome assemblies used in this project. The column GenBank comprises all the accession numbers of the genome assemblies that were used, and te values show N/A when the assembly was not available. The genome assemblies were annotated using Augustus
+The file Fusarium_info contains relevant information about the genome assemblies used in this project. The column GenBank comprises all the accession numbers of the genome assemblies that were used, and te values show N/A when the assembly was not available through public repositories. The genome assemblies were downloaded using the accession numbers and stored in a single directory along with the extra genomes belonging to this and previous projects.
 
+For further analysis, we will need two files per genome assembly:
+
+- Fasta file containing only the predicted coding sequences
+- GFF3 file containing the predticted annotation features.
+
+Both files were generated using Augustus prediction mode for each genome assembly as follows:
 ```bash
-augustus --gene
+for genome in *.fasta;
+do;
+augustus --species=fusarium --gff3=on ${genome} > ${CustomPrefix}_augustus.gff3;
+done;
+```
+This command should produce the requiered GFF3 file per genome assembly. In order to obtain the fasta file containing the coding sequences we can use the [getAnnoFasta.pl](https://github.com/Gaius-Augustus/Augustus/blob/master/scripts/getAnnoFasta.pl) script belonging to the same package as follows:
+```bash
+perl getAnnoFasta.pl ${augustus_output}.gff --seqfile={genome_assembly}.fasta 
 ```
