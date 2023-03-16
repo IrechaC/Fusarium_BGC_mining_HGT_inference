@@ -1,9 +1,11 @@
 # Master-Thesis-Analysis
 This repository contains all the information comprising scripts, metadata and procedures that were carried out during the Fusarium project belonging to my masters thesis.
 ## Software Required
-The software requiered to perform all the analysis are as follows:
+The software required to perform all the analysis are as follows:
 
 [Augustus](https://github.com/Gaius-Augustus/Augustus) 3.2.2
+
+[Seqkit](https://github.com/shenwei356/seqkit) 2.3.0
 
 [Antismash](https://github.com/antismash/antismash) 6.1.0
 
@@ -14,7 +16,7 @@ The software requiered to perform all the analysis are as follows:
 [proteinortho](https://gitlab.com/paulklemm_PHD/proteinortho) 6.1.0
 
 ## Database Construction
-The file Fusarium_info contains relevant information about the genome assemblies used in this project. The column GenBank comprises all the accession numbers of the genome assemblies that were used, and te values show N/A when the assembly was not available through public repositories. The genome assemblies were downloaded using the accession numbers and stored in a single directory along with the extra genomes belonging to this and previous projects.
+The file Assemblies_list contains all the accession numbers of the genome assemblies that were used. Additionally, two more genome assemblies from a previous project identified as *F. verticillioides* S23 and *F. irregulare* 1A were used. The genome assemblies were downloaded using the accession numbers and stored in a single directory along with the extra genomes belonging to the previous project.
 
 For further analysis, we will need two files per genome assembly:
 
@@ -25,10 +27,26 @@ Both files were generated using Augustus prediction mode for each genome assembl
 ```bash
 for genome in *.fasta;
 do;
-augustus --species=fusarium --gff3=on ${genome} > ${CustomPrefix}_augustus.gff3;
+augustus --species=fusarium --gff3=on ${genome} > ${CustomPrefix}.gff3;
 done;
 ```
-This command should produce the requiered GFF3 file per genome assembly. In order to obtain the fasta file containing the coding sequences we can use the [getAnnoFasta.pl](https://github.com/Gaius-Augustus/Augustus/blob/master/scripts/getAnnoFasta.pl) script belonging to the same package as follows:
+This command should produce the required GFF3 file per genome assembly. In order to obtain the fasta file containing the coding sequences we can use the [getAnnoFasta.pl](https://github.com/Gaius-Augustus/Augustus/blob/master/scripts/getAnnoFasta.pl) script belonging to the same package as follows:
 ```bash
 perl getAnnoFasta.pl ${augustus_output}.gff --seqfile={genome_assembly}.fasta 
 ```
+After executing the two previous commands, we should have the Fasta and GFF3 files per genome assembly neccessaries for the rest of the analysis.
+
+The first analysis aims to compare three genomic features among the genome sequences. In order to achieve that, we calculated the size of each genome using Seqkit and store them in a .tsv file:
+```bash
+seqkit stats --infile-list <(find Directory_Containing_Assemblies/ -name "*.fasta") --tabular -o Size_fastas.tsv
+```
+Then, we manually calculated the gene content of each genome sequence by using the grep command with the coding sequence output from Augustus:
+```bash
+grep -c '>' *augustus_coding_sequence.fasta >> Genes_fastas.tsv
+```
+Finally, we use a custom R script ([GC_Calculator](scripts/GC_Calculator.R)) to calculate the GC content of each genome assembly. This information, along with other relevant data from the repositories webpage, were merged into a single metadata file named Fusarium_info, wich was henceforth used for the analysis.
+
+
+
+
+
