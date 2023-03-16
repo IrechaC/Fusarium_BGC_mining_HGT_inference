@@ -1,5 +1,5 @@
 library(seqinr)
-GC_Content <- function(Genome_Sequence){
+GC_Calculator <- function(Genome_Sequence){
 Genome <- read.fasta(file = Genome_Sequence, seqtype = "DNA",
                      forceDNAtolower = TRUE)
 total_gc <- 0
