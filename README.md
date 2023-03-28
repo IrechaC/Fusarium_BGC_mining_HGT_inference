@@ -44,13 +44,13 @@ Then, we manually calculated the gene content of each genome sequence by using t
 ```bash
 grep -c '>' *augustus_coding_sequence.fasta >> Genes_fastas.tsv
 ```
-Finally, we use a custom R script ([GC_Calculator](scripts/GC_Calculator.R)) to calculate the GC content of each genome assembly. This script only requires de Seqinr package to work and can be recursively applied to several assemblies at once:
-```r
+Finally, we use a custom R script ([GC_Calculator](scripts/GC_Calculator.R)) to calculate the GC content of each genome assembly. This script only requires the Seqinr package to work and can be recursively applied to several assemblies at once:
+```R
 > for (assembly in list.files(pattern = "fasta")){
 GC_Calculator(assembly)
 }
 ```
-This information, along with other relevant data from the repositories webpage, were merged into a single metadata file named Fusarium_info, wich was henceforth used for the analysis.
+This information, along with other relevant data from the repositories webpage, were merged into a single metadata file named Fusarium_info.csv, wich was henceforth used for the analysis.
 ## GC Content, Genome Size and Gene Content Comparison
 
 
