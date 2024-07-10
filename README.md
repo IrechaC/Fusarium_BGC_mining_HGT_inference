@@ -16,7 +16,7 @@ The software required to perform all the analysis are as follows:
 [proteinortho](https://gitlab.com/paulklemm_PHD/proteinortho) 6.1.0
 
 ## Database Construction
-The file Assemblies_list contains all the accession numbers of the genome assemblies that were used. Additionally, two more genome assemblies from a previous project identified as *F. verticillioides* S23 and *F. irregulare* 1A were used. The genome assemblies were downloaded using the accession numbers and stored in a single directory along with the extra genomes belonging to the previous project.
+The file Assemblies_list contains all the accession numbers of the genome assemblies that were analized. Additionally, two more genome assemblies from a previous project identified as *F. verticillioides* S23 and *F. irregulare* 1A were used. The genome assemblies were downloaded using the accession numbers and stored in a single directory along with the extra genomes belonging to the previous project.
 
 For further analysis, we will need two files per genome assembly:
 
