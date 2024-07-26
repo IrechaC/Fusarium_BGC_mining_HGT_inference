@@ -1,3 +1,13 @@
+#test if there is at least one argument: if not, return an error
+Fasta <- commandArgs(trailingOnly = TRUE)
+if (length(Fasta)==0) {
+  stop("At least one argument must be supplied", call. = FALSE)
+}
+#test for seqinr package installed
+if (require("seqinr")==FALSE){
+  install.packages("seqinr")
+}
+
 library(seqinr)
 GC_Calculator <- function(Genome_Sequence){
 Genome <- read.fasta(file = Genome_Sequence, seqtype = "DNA",
@@ -19,3 +29,5 @@ for (chromosome in 1:length(Genome)){
 GCmol=(((total_gc)/longitud_total)) * 100
 print(paste ("The GC content of the sequence", Genome_Sequence, "is", GCmol, "mol%"))
 }
+
+GC_Calculator(Fasta)
